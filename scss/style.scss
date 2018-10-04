@@ -1,11 +1,14 @@
 @import "_normalize";
-$PNb: 'ProximaNova-Black';
-$RNl: 'ProximaNova-Light';
-$PN: 'ProximaNova-Regular';
-$PNs: 'ProximaNova-Semibold';
-$G: 'Georgia';
-$PrN: 'Proxima Nova';
-$Fontello: 'fontello';
+$DPCb: 'DINPro-CondensedBold';
+$Bbk: 'BoschSans-Black';
+$Bb: 'BoschSans-Bold';
+$Bm: 'BoschSans-Medium';
+$B: 'BoschSans-Regular';
+$Bi: 'BoschSans-RegularItalic';
+$Cb: 'cuprum-bold';
+$DPCN: 'DIN Pro';
+$BN: 'Bosch Sans';
+$CN: 'Cuprum';
 
 
 $normal: normal;
@@ -18,12 +21,17 @@ $black: 900;
 $light: 300;
 
 $dir:'../fonts/';
-$bgcolor:#a07262;
+$bg-color:#b4eaff;
 $wt:#fff;
 $bk:#000;
-$accentcolor:#c5a07c;
-$ttl:31px;
+$accent-color:#3aa2cc;
+$ttl-fz:36px;
+$fz:16px;
+$btn-color: #cb1436;
 
+@mixin trans(){
+    transition: 0.4s all;
+}
 
 @mixin font($fontname, $fweight, $fstyle, $fontfamily){
     @font-face {
@@ -35,15 +43,147 @@ $ttl:31px;
                 font-style: $fstyle;
     }
 }
-@include font($PNb, $black, $normal, $PrN);
-@include font($RNl, $light, $normal, $PrN);
-@include font($PNs, $semibold, $normal, $PrN);
-@include font($G, $normal, $normal, $G);
-@include font($PN, $normal, $normal, $PrN);
+@include font($DPCb, $bold, $normal, $DPCN);
+@include font($Bbk, $black, $normal, $BN);
+@include font($Bb, $bold, $normal, $BN);
+@include font($Bm, $medium, $normal, $BN);
+@include font($B, $normal, $normal, $BN);
+@include font($B, $normal, $italic, $BN);
+@include font($Cb, $bold, $normal, $CN);
+body { 
+    font-family: $BN, Tahoma, sans-serif;
+    line-height: 1;
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    font-size: $fz;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.btn{
+    text-align: center;
+    button{
+        width: 202px;
+        height: 35px;
+        border-radius: 18px;
+        background-color: $btn-color;
+        color: #FFF;
+        font-family: $BN;
+        font-size: $fz;
+        font-weight: 500;
+        letter-spacing: -0.32px;
+        line-height: 19px;
+        border-color: #f58499;
+        @include trans();
+        &:hover{
+            border-color: $btn-color;
+        }
+    }
+}
 
-@include font($Fontello, $normal, $normal, $Fontello);
-.demo-icon {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
+
+header{
+    margin-top: 21px;
+    background-image: linear-gradient(180deg, rgba(65, 156, 213, 1) 0%, rgba(65, 156, 213, 1) 100%);
+    width: 100%;
+    height: 62px;
+    .h-header{
+        height: 62px;
+    }
+    .logo{
+        position: relative;
+        display: flex;
+        -webkit-align-items: center;
+                align-items: center;
+        .img{
+            position: relative;
+            top: 15px;
+            img{
+                max-width: 112px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .slogan{
+            color: #ffffff;
+            font-family: "DIN Pro";
+            font-size: 33px;
+            font-weight: 400;
+            line-height: 39px;
+            margin-left: 34px;
+        }
+    }
+    .phone{
+        .ico-ph{
+            img{
+                
+            }
+        }
+        span{
+            a{
+                margin-left: 11px;
+                color: #ffffff;
+                font-family: "DIN Pro";
+                font-size: 33px;
+                font-weight: 400;
+                line-height: 39px;
+            }
+        }
+    }
+    .callback{
+        .btn{
+            button{
+                
+            }
+        }
+    }
+    .nav-menu{
+        position: absolute;
+        right: 0;
+        bottom: -35px;
+        ul{
+            max-width: 623px;
+            width: 100%;
+            height: 35px;
+            li{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0 10px;
+                list-style: none;
+                @include trans();
+                a{
+                    font-family: $BN;
+                    font-size: $fz;
+                    font-weight: 400;
+                    line-height: 19px;
+                    text-decoration: none;
+                }
+                &.active, &:hover{
+                    background: #f1f1f1;
+                    position: relative;
+                }
+                &.active:after, &:hover:after{
+                    content: "";
+                    position: absolute;
+                    border-bottom: 3px solid #8e880e;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
 }
