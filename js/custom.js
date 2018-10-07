@@ -3,7 +3,7 @@ $( document ).ready(function() {
 		prevArrow: $('.prev-arrow-banner'),
 		nextArrow: $('.next-arrow-banner'),
 		autoplay: true,
-		speed: 3400,
+		speed: 400,
 		dots: true,
 		infinite: true,
 		slidesToShow: 1,
@@ -15,7 +15,10 @@ $( document ).ready(function() {
 		$(this).siblings(".oplet").toggle('fast');
 		$(this).children("img").toggleClass("services-arrow-scale");
 	});
-
+    $(".sldr-review").slick({
+        prevArrow: $('.prev-review-arrow'),
+		nextArrow: $('.next-review-arrow'),
+    })
 
 })
 
