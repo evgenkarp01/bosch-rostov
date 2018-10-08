@@ -1,0 +1,233 @@
+@media only screen and (max-width: 1200px) {
+  section.advantages .advantages-alert .item-advantages {
+    border-radius: 0;
+  }
+
+  section.advantages .oplet {
+    padding: 70px 0;
+  }
+
+  section.review .review-alert .sldr-review {
+    padding: 0 65px;
+  }
+
+  .form-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .logo .slogan {
+    font-size: 23px;
+    margin-left: 15px;
+  }
+
+  header .phone span a {
+    font-size: 23px;
+  }
+
+  .phone .ico-ph img {
+    width: 21px;
+  }
+
+  section.stock-one .stock-alert .desc-stock {
+    text-align: center;
+  }
+
+  section.stock-one .stock-alert .parcente .number {
+    font-size: 157px;
+  }
+
+  section.stock-one .stock-alert .parcente .txt {
+    font-size: 72px;
+    line-height: 86px;
+  }
+
+  section.advantages .advantages-alert .item-advantages {
+    margin: 8px 0;
+  }
+
+  section.stock-two .stock-two-alert .flex {
+    flex-direction: column;
+  }
+
+  section.stock-two .stock-two-alert .col-pol:last-child {
+    margin-top: 30px;
+  }
+
+  section.stock-two .stock-two-alert .desc-stock-two {
+    margin-left: 0;
+  }
+
+  section.stock-two .stock-two-alert .desc-stock-two p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .contacts .flex {
+    flex-direction: column;
+  }
+
+  section.contacts .contacts-alert .col-pol {
+    width: 100%;
+  }
+
+  section.contacts .contacts-alert .col-pol:first-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .col-3 .logo-f .img img {
+    max-width: 270px;
+  }
+
+  footer .col-3 .logo-f .slogan {
+    font-size: 28px;
+  }
+
+  footer .col-3 .social ul li {
+    margin: 0 1px;
+  }
+
+  footer .col-3 .social ul li img {
+    width: 30px;
+  }
+
+  footer .col-3 .phone-f .ph {
+    font-size: 25px;
+  }
+
+  footer .col-3 .phone-f .ico img {
+    width: 23px;
+    height: 20px;
+  }
+
+  footer .col-3 .phone-f {
+    margin-top: 4px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .callback, header .nav-menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  section.banner .slider .slide .sldr-ttl {
+    font-size: 50px;
+    line-height: 49px;
+  }
+
+  section.garant .garant-alert .r-col {
+    display: none;
+  }
+
+  section.garant .garant-alert .col-pol {
+    width: 100%;
+    padding: 15px;
+  }
+
+  section.stock-one .stock-alert {
+    flex-direction: column;
+  }
+
+  section.stock-one .stock-alert .parcente {
+    margin-left: 0;
+  }
+
+  section.stock-one .stock-alert {
+    min-height: 547px;
+    padding-top: 43px;
+  }
+
+  .mmenu-footer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 630px) {
+  header .logo .slogan {
+    display: none;
+  }
+
+  section.banner .slider .slide .ttl, section.banner .slider .slide .btn {
+    padding-top: 70px;
+  }
+
+  section.banner .slider .slide .btn {
+    margin-top: 25px;
+  }
+
+  section.advantages .advantages-alert .item-advantages {
+    padding: 20px;
+  }
+
+  .social-network {
+    display: none;
+  }
+
+  footer .footer-alert {
+    justify-content: center;
+  }
+
+  footer {
+    min-height: 288px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header .phone {
+    display: none;
+  }
+
+  section.banner .slider .slide .sldr-ttl {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  section.banner .slider .slide .desc {
+    margin-top: 70px;
+  }
+
+  section.banner .slider .slide .desc p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  section.banner .slider .slide .btn button {
+    max-width: 280px;
+  }
+
+  section.banner .slider .slide .btn {
+    margin-top: 0;
+  }
+
+  .ttl h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  section.stock-one .stock-alert .desc-stock .data .txt p {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  section.advantages .advantages-alert .item-advantages .ico img {
+    width: 70px;
+  }
+
+  section.review .review-alert .review-arrow {
+    display: none;
+  }
+
+  section.review .review-alert .sldr-review {
+    padding: 0 5px;
+  }
+
+  section.contacts .contacts-alert .col-pol ul li .ico {
+    margin-right: 10px;
+  }
+
+  section.contacts .contacts-alert .col-pol ul li {
+    line-height: 35px;
+  }
+}

@@ -377,9 +377,12 @@ section.banner .next-arrow-banner {
 }
 section.banner .slider .slide {
   min-height: 800px;
+  background-position: center;
+  background-size: cover;
 }
 section.banner .slider .slide .ttl {
   padding-top: 174px;
+  padding: 174px 15px 0 15px;
 }
 section.banner .slider .slide .sldr-ttl {
   color: #fffcea;
@@ -416,9 +419,13 @@ section.banner .slider .slide .btn button {
 }
 section.banner .slider .sldr-one {
   background: url(../img/slide1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 section.banner .slider .sldr-two {
   background: url(../img/slide2.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 section.banner .slider__dots {
   position: absolute;
@@ -427,6 +434,8 @@ section.banner .slider__dots {
 }
 section.services .flex {
   align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 section.services .ser-ttl {
   margin-top: 60px;
@@ -435,7 +444,7 @@ section.services .service {
   margin: 0 7px;
   padding: 15px 7px;
   text-align: center;
-  min-width: 239px;
+  max-width: 238px;
   transition: 0.4s all;
 }
 section.services .service .ico {
@@ -453,9 +462,6 @@ section.services .service .ico img {
 }
 section.services .service .ttl {
   margin: 15px 0;
-}
-section.services .service .oplet {
-  display: none;
 }
 section.services .service .oplet ul li {
   list-style: none;
@@ -811,6 +817,10 @@ footer .col-3 .social ul li {
   list-style: none;
   margin: 0 2px;
 }
+footer .col-3 .social ul li img {
+  width: 43px;
+  height: auto;
+}
 footer .col-3 .phone-f {
   margin-top: 15px;
 }
@@ -862,4 +872,149 @@ footer .copyright p a {
 }
 .slick-dotted.slick-slider li button[aria-selected="true"] {
   background: #746f06;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu {
+  width: 100%;
+  display: table;
+  border-bottom: 1px solid #fff;
+  z-index: 999;
+  background: #535459;
+  left: 0;
+  right: 0;
+}
+
+.menu ul {
+  display: table-row;
+  list-style: none;
+}
+
+.menu ul li {
+  display: table-cell;
+}
+
+.menu ul li a {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  color: #FFF;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right: 1px solid #fff;
+}
+
+.menu ul li:last-child a {
+  border-right: none;
+}
+
+#sandwich {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  margin: 0;
+  display: none;
+}
+
+.sw_top {
+  position: relative;
+  top: 0;
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  /* transition-delay: 0.2s, 0s; */
+}
+
+.sw_bottom {
+  position: relative;
+  width: 50px;
+  height: 5px;
+  top: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  transition-delay: 0.2s, 0s;
+}
+
+.sw_footer {
+  position: relative;
+  width: 50px;
+  height: 5px;
+  top: 20px;
+  background: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+}
+
+#sandwich.active .sw_top {
+  top: 15px;
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
+}
+
+#sandwich.active .sw_bottom {
+  top: 10px;
+  -webkit-transform: rotate(-140deg);
+          transform: rotate(-140deg);
+}
+
+#sandwich.active .sw_footer {
+  opacity: 0;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .menu {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 112px;
+    border-bottom: none;
+  }
+
+  .menu ul {
+    display: block;
+  }
+
+  .menu ul li {
+    display: block;
+  }
+
+  .menu ul li a {
+    border-bottom: 1px solid #fff;
+    display: block;
+    border-right: none;
+  }
+
+  .menu ul li:last-child a {
+    border-right: none;
+  }
+
+  #sandwich {
+    top: 10px;
+    right: 10px;
+    display: block;
+  }
+}
+section.stock-two .stock-two-alert .col-pol .ttl h3 {
+  line-height: 1.4;
 }
