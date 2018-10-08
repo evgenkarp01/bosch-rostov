@@ -686,7 +686,7 @@ section{
 }
 footer{
     margin-top: 120px;
-    min-height: 395px;
+    min-height: 455px;
     background-color: #535459;
     color: #fff;
     display: -webkit-flex;
@@ -807,7 +807,7 @@ footer{
         }
     }
     .copyright{
-        height: 69px;
+        min-height: 69px;
         background-color: #272727;
         text-align: center;
         padding-top: 22px;
@@ -821,20 +821,111 @@ footer{
                 color: #4ECC6D;
             }
         }
+        sup{
+            color: red;
+        }
+        .persd-sogl{
+            a{
+                color: #aba5a5;
+            }
+        }
     }
 }
 
 
 
+.window-modal{
+    max-width: 550px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 30px 25px;
+    background: #F4FCFF;
+    
+    form{
+        .logo-form{
+            img{
+                max-width: 120px;
+                height: auto;
+            }
+        }
+        h2{
+            text-align: center;
+            font-size: 26px;
+        }
+        .flex-form{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-direction: column;
+            input{
+                margin-bottom: 10px;
+                height: 35px;
+                width: 100%;
+                color: #9c9a9a;
+                border: 1px solid #272727;
+                border-radius: 3px;
+                padding: 0 15px;
+                background: none;
+                &:first-child{
+                    margin-top: 20px;
+                }
+            }
+            .btn{
+                margin-top: 35px;
+                button{}
+            }
+        }
+    }
+}
+.persd-sogl{
+    margin: 15px 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    a{
+        color: #8e880e;
+    }
+}
+
+.oferta{
+    font-size: 12px;
+    text-align: center;
+    max-width: 950px;
+    margin: 6px auto;
+}
 
 
 
 
+.scrollup {
+  transition: all 0.3s ease-out;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  text-indent: -9999px;
+  background: rgba(0, 0, 0, 0.6) url(../img/sprite.png) no-repeat 13px -1027px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  z-index: 999;
+  display: flex;
+  border-radius: 1px;
+  justify-content: center;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
 
-
-
-
-
+.scrollup:hover {
+  background: black url(../img/sprite.png) no-repeat 13px -1027px;
+}
 
 
 

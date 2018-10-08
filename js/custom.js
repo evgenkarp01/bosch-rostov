@@ -57,6 +57,51 @@ $( document ).ready(function() {
 		$("#sandwich, .menu_item").click(function() {
 	     $("#sandwich").toggleClass("active");
 	});
+    
+    
+    
+    $('.modal-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+    
+    $("a.ancLinks").click(function () { 
+			var elementClick = $(this).attr("href");
+			var destination = $(elementClick).offset().top;
+			$('html,body').animate( { scrollTop: destination }, 400 );
+			return false;
+		});
+    
+    $(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup, .callme').fadeIn();
+			}
+			else {
+				$('.scrollup, .callme').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function () {
+			$("html, body").animate({
+				scrollTop: 0
+			}, 600);
+			return false;
+		});
+    
+    $(function(){
+        $('[name="phone_footer"]').mask("+7(999) 999-99-99");
+        $('[name="phone"]').mask("+7(999) 999-99-99");
+    });
 })
 
 
