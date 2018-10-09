@@ -181,8 +181,8 @@ header{
             position: relative;
             top: 15px;
             img{
-                max-width: 112px;
-                width: 100%;
+                width: 112px;
+                height: 112px;
                 height: auto;
                 box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
             }
@@ -848,8 +848,8 @@ footer{
     form{
         .logo-form{
             img{
-                max-width: 120px;
-                height: auto;
+                width: 120px;
+                height: 49px;
             }
         }
         h2{
